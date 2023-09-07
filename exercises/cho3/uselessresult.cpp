@@ -10,5 +10,6 @@ void print_twice(char phil) {
 
 int main() {
     print_twice('z');
-    return 0;
 }
+
+//it seems like the function will just proceed as normal and output the result. Within a large program I think it might be ignored. 

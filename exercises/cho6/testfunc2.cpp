@@ -10,4 +10,4 @@ void recurse_forever(int n) {
 }
 
 
-//will loop forever because end if functions calls the function again.
+//will loop forever because end if functions calls the function again. Stack is memory allocated when calling a function, in this case functions are being called a lot causing the computer to slow down.;

@@ -30,11 +30,17 @@ for (int i = 0; i < bounds; i++) {
     int index = number[i];
     histogram[index]++;
 
+return histogram;
 }
 
 }
 
-
+void print_vector(const vector<int>& vec)
+{
+    for (int i = 0; i < vec.size(); i++) {
+        cout << vec[i] << " ";
+    }
+}
 
  int main(){
 
@@ -42,6 +48,7 @@ for (int i = 0; i < bounds; i++) {
 int num_values = 100000;
 int upper_bound = 10;
 vector<int> vector = random_vector(num_values, upper_bound);
-
+vector<int> z = histogra(vector,10);
+print_vector(z);
 
 }

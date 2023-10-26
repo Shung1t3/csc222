@@ -1,10 +1,15 @@
 #include<iostream>
 #include "Time.h"
+#include<string>
 using namespace std;
 
 
 
+string Time::tostring(){
 
+    return hour + ":" + minute + ":" + second;
+
+}
 
 double Time::convert_to_seconds()
 {

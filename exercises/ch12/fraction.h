@@ -12,4 +12,5 @@ double denom_convert(double numb);
 void times(double numb);
 void divided_by(double numb);
 void print();
+void simplify();
 };

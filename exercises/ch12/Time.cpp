@@ -1,5 +1,6 @@
 #include<iostream>
 #include "Time.h"
+#include<cmath>
 #include<string>
 using namespace std;
 
@@ -7,7 +8,7 @@ using namespace std;
 
 string Time::tostring(){
 
-    return hour + ":" + minute + ":" + second;
+    return to_string(this->hour) + ":" + to_string(this->minute) + ":" + to_string(second);
 
 }
 

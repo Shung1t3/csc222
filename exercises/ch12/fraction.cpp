@@ -57,8 +57,28 @@ void fraction::divided_by(double numb){
 denom = denom*numb;
 cout << "num:" << num << "denom:" << denom << endl;
 
+
+
 }
 
+void fraction::simplify(){
+    int min;
+    if(num >= denom){
+        min = denom;
+    }
+    if(denom >= num){
+        min = num;
+    }
+
+for(int i = min; i > 0; i--){
+if(num%i && denom&i == 0){
+    num = num/i;
+    denom = denom/i;
+}
+
+}
+
+}
 
 int main(){
 

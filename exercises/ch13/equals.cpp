@@ -9,7 +9,7 @@ struct Card
 
     Card();
     Card(int s, int r);
-    string to_string();
+    string to_string()const;
 };
 
 Card::Card() {
@@ -28,3 +28,4 @@ string Card::to_string() const
 
     return rank_strings[rank] + " of " + suit_strings[suit];
 }
+

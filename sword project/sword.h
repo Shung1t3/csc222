@@ -4,6 +4,8 @@
 struct dummy{
 int health;
 
+dummy(int health);
+void check();
 };
 
 struct weapon{

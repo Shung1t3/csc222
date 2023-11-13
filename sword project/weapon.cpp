@@ -20,3 +20,15 @@ return basedmg;
 
 }
 
+
+
+
+
+
+
+
+
+dummy::dummy(int hlth){
+health = hlth;
+
+}

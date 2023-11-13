@@ -14,6 +14,7 @@ double crit;
 
 weapon(int dmg, double crit);
 int trudmg();
+void test();
 void attack(dummy dummy);
 
 };

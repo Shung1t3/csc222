@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+using namespace std;
 #include "sword.h"
 
 weapon::weapon(int dmg, double critc){
@@ -20,8 +21,19 @@ return basedmg;
 
 }
 
+void weapon::test(){
+
+cout << "Damage:" + trudmg() << endl;   
+}
 
 
+void weapon::attack(dummy dum){
+int atk = trudmg();
+dum.health -= atk;
+
+cout << "Damage:" + atk << "Dummy Health:" + dum.health << endl;
+
+}
 
 
 
@@ -30,5 +42,12 @@ return basedmg;
 
 dummy::dummy(int hlth){
 health = hlth;
+
+}
+
+
+void dummy::check(){
+
+cout << "Health:" + health;
 
 }

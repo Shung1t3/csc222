@@ -56,17 +56,3 @@ cout << "Health:" << health;
 }
 
 
-int main(){
-weapon s(20, 0.3);
-
-dummy dum(40);
-
-s.test();
-
-dum.check();
-
-s.attack(dum);
-
-dum.check();
-
-}

@@ -20,10 +20,4 @@ TEST_CASE("Test weapon and dummy interactions") {
         myWeapon.attack(myDummy);
         // Example output: "Damage: <calculated damage> Dummy Health: <remaining health>"
     }
-
-    // Check the current health of the dummy.
-    SUBCASE("Test dummy health check") {
-        myDummy.check();
-        // Example output: "Health: <remaining health>"
-    }
 }

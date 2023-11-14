@@ -56,10 +56,5 @@ health = 0;
 
 }
 
-void dummy::check(){
-
-cout << "Health:" << health;
-
-}
 
 

@@ -5,7 +5,6 @@ struct dummy{
 int health;
 
 dummy(int health);
-void check();
 void recvdmg(int atk);
 };
 

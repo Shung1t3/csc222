@@ -27,7 +27,7 @@ cout << "Damage:" << trudmg() << endl;
 }
 
 
-void weapon::attack(dummy $dum){
+void weapon::attack(dummy &dum){
 int atk = trudmg();
 dum.recvdmg(atk);
 

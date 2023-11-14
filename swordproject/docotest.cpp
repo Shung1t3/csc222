@@ -4,7 +4,7 @@
 
 TEST_CASE("Test weapon and dummy interactions") {
     // Create a weapon with a base damage and critical chance.
-    weapon myWeapon(20, 0.3);
+    weapon myWeapon(20, 3.0);
 
     // Create a dummy with an initial health.
     dummy myDummy(100);

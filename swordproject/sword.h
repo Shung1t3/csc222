@@ -6,6 +6,7 @@ int health;
 
 dummy(int health);
 void check();
+void recvdmg(int atk);
 };
 
 struct weapon{
@@ -16,6 +17,7 @@ weapon(int dmg, double crit);
 int trudmg();
 void test();
 void attack(dummy dummy);
+
 
 };
 

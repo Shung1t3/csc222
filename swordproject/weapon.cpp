@@ -29,10 +29,9 @@ cout << "Damage:" << trudmg() << endl;
 
 void weapon::attack(dummy dum){
 int atk = trudmg();
-dum.health -= atk;
-if(dum.health < 0){
-    dum.health = 0;
-}
+dum.recvdmg(atk);
+
+
 
 cout << "Damage:" << atk << "Dummy Health:" << dum.health << endl;
 
@@ -48,6 +47,14 @@ health = hlth;
 
 }
 
+void dummy::recvdmg(int atk){
+health -= atk;
+if(health < 0){
+health = 0;
+}
+
+
+}
 
 void dummy::check(){
 

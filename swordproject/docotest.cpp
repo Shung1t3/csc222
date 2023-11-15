@@ -13,7 +13,7 @@ TEST_CASE("Test weapon and dummy interactions") {
     
     myWeapon.to_string();
 
-    }
+    
     SUBCASE("Test weapon damage calculation") {
         myWeapon.test();
         // Example output: "Damage: <calculated damage>"

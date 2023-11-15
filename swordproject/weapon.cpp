@@ -7,6 +7,10 @@ weapon::weapon(int dmg, double critc){
 basedmg = dmg;
 crit = critc;
 }
+void weapon::to_string(){
+
+    cout << "Base Damage:" << basedmg << "  " << "Crit Chance:" << crit << endl;
+}
 
 int weapon::trudmg(){
 double calculation = (rand() % 100) / 100;

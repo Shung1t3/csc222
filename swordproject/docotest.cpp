@@ -9,7 +9,11 @@ TEST_CASE("Test weapon and dummy interactions") {
     // Create a dummy with an initial health.
     dummy myDummy(100);
 
-    // Test the weapon's damage calculation.
+
+    
+    myWeapon.to_string();
+
+    }
     SUBCASE("Test weapon damage calculation") {
         myWeapon.test();
         // Example output: "Damage: <calculated damage>"

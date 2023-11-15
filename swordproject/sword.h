@@ -13,6 +13,7 @@ int basedmg;
 double crit;
 
 weapon(int dmg, double crit);
+void to_string();
 int trudmg();
 void test();
 void attack(dummy &dummy);

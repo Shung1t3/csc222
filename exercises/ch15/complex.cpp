@@ -66,7 +66,9 @@ Complex operator - (const Complex& c)
 
 Complex operator / (const Complex& c)
 {
-    return Complex(real / c.real, imag / c.imag);
+
+    
+return Complex(real / c.real, imag / c.imag);
 
 
 };
@@ -101,6 +103,6 @@ double ab;
 
 ab = a.abs();
 
-cout << "subtract:" << tempsub.get_real() << "+" << tempsub.get_imag() << "i" << endl << "Division:" << " " << tempdiv.get_real() << "+" << tempdiv.get_imag()<< "+" << endl << "abs:" << " " << ab << endl;
+cout << "subtract:" << tempsub.get_real() << "+" << tempsub.get_imag() << "i" << endl << "Division:" << " " << tempdiv.get_real() << "+" << tempdiv.get_imag() << endl << "abs:" << " " << ab << endl;
 }
 

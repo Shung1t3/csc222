@@ -79,4 +79,8 @@ return absv;
 
 }
 
-
+ostream & operator << (ostream &out, const Complex &c){
+    cout << c.real;
+    cout << "+" << c.imag << "i" << endl;
+    return out;
+}

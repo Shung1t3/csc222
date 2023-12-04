@@ -6,8 +6,8 @@ using namespace std;
 
 Complex c1 = Complex(3,4);
 
-TEST_CASE("") 
+TEST_CASE("absolute value") 
 {
-   
+   CHECK(c1.abs() == 5);
 }
 

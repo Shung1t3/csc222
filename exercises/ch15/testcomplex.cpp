@@ -6,7 +6,7 @@ using namespace std;
 
 Complex c1 = Complex(3,4);
 
-TEST_CASE("Test the overloaded << operator") 
+TEST_CASE("") 
 {
    
 }

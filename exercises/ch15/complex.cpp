@@ -5,9 +5,9 @@ using namespace std;
 
 
 
-    Complex::Complex() { real = 0; imag = 0; 
-    polar =false;
-    }
+Complex::Complex() { real = 0; imag = 0; 
+polar =false;
+}
     Complex::Complex(double r, double i) { real = r; imag = i; 
     polar = false;
 
@@ -72,15 +72,16 @@ return Complex(real / c.real, imag / c.imag);
 
 
 
-double Complex::abs(){
+double Complex::abs()
+{
 double absv;
 absv = sqrt(real * real + imag * imag);
 return absv;
 
-}
+};
 
 ostream & operator << (ostream &out, const Complex &c){
     out << c.real;
     out << "+" << c.imag << "i";
     return out;
-}
+};

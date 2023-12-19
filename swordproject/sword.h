@@ -1,22 +1,15 @@
 #include <iostream>
 #include <cstdlib>
+#include <string>
 
-struct dummy{
-int health;
-
-dummy(int health);
-void recvdmg(int atk);
-};
-
-struct weapon{
+struct Sword{
 int basedmg;
-double crit;
 
-weapon(int dmg, double crit);
-void to_string();
-int trudmg();
-void test();
-void attack(dummy &dummy);
+Sword();
+Sword(int dmg);
+int damage();
+int armor_damage(int a);
+string to_string();
 
 
 };

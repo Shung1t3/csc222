@@ -3,42 +3,33 @@
 using namespace std;
 #include "sword.h"
 
-weapon::weapon(int dmg, double critc){
-basedmg = dmg;
-crit = critc;
-}
-void weapon::to_string(){
-
-    cout << "Base Damage:" << basedmg << "  " << "Crit Chance:" << crit << endl;
-}
-
-int weapon::trudmg(){
-double calculation = (rand() % 100) / 100;
-
-if (calculation < crit){
-
-return basedmg * 2;
-
-}else {
-return basedmg;    
-}
+Sword::Sword(){
+    basedmg = 0;
 
 }
 
-void weapon::test(){
+Sword::Sword(int dmg){
+    basedmg = dmg;
 
-cout << "Damage:" << trudmg() << endl;   
+}
+string Sword::to_string(){
+
+    return std::to_string(basedmg);
 }
 
 
-void weapon::attack(dummy &dum){
-int atk = trudmg();
-dum.recvdmg(atk);
+
+int Sword::damage(){
+
+    return basedmg;   
+}
 
 
+int Sword::armor_damage(int a){
+    int atk = basedmg;
+    int armdmg = basedmg/a;
 
-cout << "Damage:" << atk << "Dummy Health:" << dum.health << endl;
-
+    return armdmg;
 }
 
 
@@ -46,19 +37,10 @@ cout << "Damage:" << atk << "Dummy Health:" << dum.health << endl;
 
 
 
-dummy::dummy(int hlth){
-health = hlth;
-
-}
-
-void dummy::recvdmg(int atk){
-health -= atk;
-if(health < 0){
-health = 0;
-}
 
 
-}
+
+
 
 
 

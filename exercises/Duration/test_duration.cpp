@@ -1,7 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include <doctest.h>
 #include "duration.cpp"
-using namespace std;
+
 
 TEST_CASE("Test can create and render a Duration") {
     Duration d;

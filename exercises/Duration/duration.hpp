@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+#include <cmath>
 #include <string>
 
 class Duration 
@@ -10,7 +11,7 @@ public:
 
 Duration();
 Duration(int second);
-Duration convert();
+void convert();
 string to_string();
 int days();
 int hours();

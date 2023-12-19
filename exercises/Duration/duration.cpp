@@ -1,8 +1,6 @@
-#include <iostream>
-#include <string>
-#include <cmath>
+
 #include "duration.hpp"
-using namespace std;
+
 
 Duration::Duration(){
 day = 0;
@@ -20,7 +18,7 @@ second = s;
 
 };
 
-Duration Duration::convert(){
+void Duration::convert(){
 day += second % 86400;
 second = second % 86400;
 hour += second % 3600;

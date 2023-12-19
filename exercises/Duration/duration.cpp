@@ -62,6 +62,7 @@ int temp;
 temp += (86400*day)+(3600*hour)+(60*minute)+ second;
 return temp;
 }
+
 string Duration::to_string(){
 convert();
 string finl;

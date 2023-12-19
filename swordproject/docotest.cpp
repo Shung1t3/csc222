@@ -1,5 +1,5 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include <doctest.h>
+#include "doctest.h"
 #include "sword.h"
 
 TEST_CASE("Test weapon and dummy interactions") {

@@ -1,6 +1,7 @@
+#ifndef DURATION_H
+#define DURATION_H
+
 #include <iostream>
-using namespace std;
-#include <cmath>
 #include <string>
 
 class Duration 
@@ -12,7 +13,7 @@ public:
 Duration();
 Duration(int second);
 void convert();
-string to_string();
+std::string to_string();
 int days();
 int hours();
 int minutes();
@@ -24,3 +25,4 @@ Duration operator - (const Duration& m);
 
 
 
+#endif // DURATION_H

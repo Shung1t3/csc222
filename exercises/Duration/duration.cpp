@@ -1,5 +1,5 @@
 
-#include "duration.hpp"
+#include "Duration.hpp"
 
 
 Duration::Duration(){

@@ -3,7 +3,7 @@
 #include <string>
 #include <cstdlib>
 #include <cmath>
-#include "Cards.h"
+#include "Cards.hpp"
 #include "random.h"
 using namespace std;
 

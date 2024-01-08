@@ -2,8 +2,8 @@
 #include <vector>
 #include <queue>
 #include <string>
-#include "Cards.h"
-#include "random.h"
+#include "Cards.hpp"
+#include "random.cpp"
 using namespace std;
 
 Card::Card()
